@@ -1,4 +1,6 @@
 let positionSelector = 1
+let beginTop = 0
+let beginBot = 0
 
 document.getElementById("top").addEventListener("click", () => {
     selectTop()
@@ -36,10 +38,23 @@ operatorBloc.forEach(
 )
 
 function writeDigit (nb) {
+    
     if (positionSelector===1) {
-        document.getElementById("baseLine").innerHTML += `${nb}`
+
+        if (beginTop === 0) {
+            document.getElementById("baseLine").innerHTML = `${nb}`
+            beginTop++
+        } else {
+            document.getElementById("baseLine").innerHTML += `${nb}`
+        }
+
     } else {
-        document.getElementById("otherLine").innerHTML += `${nb}`
+        if (beginBot === 0) {
+            document.getElementById("otherLine").innerHTML = `${nb}`
+            beginBot++
+        } else {
+            document.getElementById("otherLine").innerHTML += `${nb}`
+        }
     }
 }
 
