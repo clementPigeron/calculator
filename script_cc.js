@@ -42,17 +42,17 @@ document.getElementById("enter").addEventListener("click", () => {
     let bot = parseInt(document.getElementById("otherLine").innerText)
     let result = 0
     switch (operator) {
-        case "add": result = top+bot ;break;
-        case "substract": result = top-bot ;break;
-        case "multiply": result = top*bot ;break;
+        case "add": result = top + bot; break;
+        case "substract": result = top - bot; break;
+        case "multiply": result = top * bot; break;
     }
     document.getElementById("result").innerHTML = result
     console.log(operator)
 })
 
-function writeDigit (nb) {
-    
-    if (positionSelector===1) {
+function writeDigit(nb) {
+
+    if (positionSelector === 1) {
 
         if (beginTop === 0) {
             document.getElementById("baseLine").innerHTML = `${nb}`
@@ -71,19 +71,19 @@ function writeDigit (nb) {
     }
 }
 
-function writeOperator (op) {
+function writeOperator(op) {
     document.getElementById("operatorLine").innerHTML = `${op}`
-    if (beginBot===0) {
+    if (beginBot === 0) {
         selectBot()
     }
 }
 
-function selectTop () {
+function selectTop() {
     document.getElementById("baseLine").style.border = "1px solid red"
     document.getElementById("otherLine").style.border = "0px"
     positionSelector = 1
 }
-function selectBot () {
+function selectBot() {
     document.getElementById("otherLine").style.border = "1px solid red"
     document.getElementById("baseLine").style.border = "0px"
     positionSelector = 2

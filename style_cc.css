@@ -1,5 +1,12 @@
 header {
     margin: 20px;
+    font-weight: bolder;
+}
+
+#calculatorBox {
+    padding: 15px;
+    background-color: lightgray;
+    width: 405px;
 }
 
 #monitor {
@@ -10,23 +17,26 @@ header {
 }
 
 #monitor p {
-    margin:3px;
+    margin: 3px;
     width: auto;
     /*border: 1px solid red;*/
 }
 
 #baseLine {
-    border:1px solid red;
+    border: 1px solid red;
 }
 
 #resultBox {
     border: 2px solid black;
-    width:400px;
+    width: 400px;
     height: 20px;
 }
 
-#monitor,#resultBox {
+#monitor,
+#resultBox {
     font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
 }
 
 button {
@@ -48,8 +58,8 @@ button {
     transition: 0.05s;
     background-color: #62b568;
     margin: 5px 5px 5px 5px;
-  }
-  
+}
+
 button:active {
     border-bottom-width: 1px;
     border-right-width: 0px;
