@@ -37,6 +37,19 @@ operatorBloc.forEach(
     }
 )
 
+document.getElementById("enter").addEventListener("click", () => {
+    let top = parseInt(document.getElementById("baseLine").innerText)
+    let bot = parseInt(document.getElementById("otherLine").innerText)
+    let result = 0
+    switch (operator) {
+        case "add": result = top+bot ;break;
+        case "substract": result = top-bot ;break;
+        case "multiply": result = top*bot ;break;
+    }
+    document.getElementById("result").innerHTML = result
+    console.log(operator)
+})
+
 function writeDigit (nb) {
     
     if (positionSelector===1) {
@@ -60,6 +73,9 @@ function writeDigit (nb) {
 
 function writeOperator (op) {
     document.getElementById("operatorLine").innerHTML = `${op}`
+    if (beginBot===0) {
+        selectBot()
+    }
 }
 
 function selectTop () {
