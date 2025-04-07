@@ -7,6 +7,10 @@ header {
     margin: 20px;
 }
 
+#monitor p {
+    margin:0px;
+}
+
 button {
     display: inline;
     align-items: center;
