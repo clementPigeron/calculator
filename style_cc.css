@@ -25,6 +25,10 @@ header {
     height: 20px;
 }
 
+#monitor,#resultBox {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 button {
     display: inline;
     align-items: center;
