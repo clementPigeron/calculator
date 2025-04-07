@@ -1,0 +1,36 @@
+#monitor {
+    width: 400px;
+    height: 50px;
+    border: 2px solid black;
+}
+header {
+    margin: 20px;
+}
+
+button {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 0 15px 0 15px;
+    height: 40px;
+    font-weight: bold;
+    border-top: 2px solid #62b568;
+    border-right: 3px solid #0e3311;
+    border-left: 2px solid #62b568;
+    border-bottom: 4px solid #0e3311;
+    transition: 0.05s;
+    background-color: #62b568;
+    margin: 5px 5px 5px 5px;
+  }
+  
+button:active {
+    border-bottom-width: 1px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+}
