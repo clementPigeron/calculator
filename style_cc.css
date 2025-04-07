@@ -1,6 +1,6 @@
 #monitor {
     width: 400px;
-    height: 50px;
+    height: 71px;
     border: 2px solid black;
 }
 header {
@@ -8,7 +8,9 @@ header {
 }
 
 #monitor p {
-    margin:0px;
+    margin:3px;
+    width: auto;
+    /*border: 1px solid red;*/
 }
 
 button {

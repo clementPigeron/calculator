@@ -1,12 +1,18 @@
-/*let positionSelector = 1
+let positionSelector = 1
 
 document.getElementById("top").addEventListener("click", () => {
+    document.getElementById("baseLine").style.border = "1px solid red"
+    document.getElementById("otherLine").style.border = "0px"
     positionSelector = 1
+
 })
-document.getElementById("bottom").addEventListener("click", () => {
+
+document.getElementById("bot").addEventListener("click", () => {
+    document.getElementById("otherLine").style.border = "1px solid red"
+    document.getElementById("baseLine").style.border = "0px"
     positionSelector = 2
 })
-*/
+
 
 let digit = document.querySelectorAll(".digit")
 digit.forEach(
@@ -27,13 +33,11 @@ operator.forEach(
 )
 
 function writeDigit (nb) {
-    /*if (positionSelector===1) {
+    if (positionSelector===1) {
         document.getElementById("baseLine").innerHTML += `${nb}`
     } else {
         document.getElementById("otherLine").innerHTML += `${nb}`
-    }*/
-
-    document.getElementById("baseLine").innerHTML += `${nb}`
+    }
 }
 
 function writeOperator (op) {
