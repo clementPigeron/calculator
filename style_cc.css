@@ -1,10 +1,12 @@
+header {
+    margin: 20px;
+}
+
 #monitor {
     width: 400px;
     height: 71px;
     border: 2px solid black;
-}
-header {
-    margin: 20px;
+    margin-bottom: 5px;
 }
 
 #monitor p {
@@ -15,6 +17,12 @@ header {
 
 #baseLine {
     border:1px solid red;
+}
+
+#resultBox {
+    border: 2px solid black;
+    width:400px;
+    height: 20px;
 }
 
 button {

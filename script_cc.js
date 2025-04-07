@@ -23,11 +23,14 @@ digit.forEach(
     }
 )
 
-let operator = document.querySelectorAll(".operator")
-operator.forEach(
+let operator = "add"
+let operatorBloc = document.querySelectorAll(".operator")
+operatorBloc.forEach(
     (btn) => {
         btn.addEventListener("click", () => {
             writeOperator(btn.textContent)
+            operator = `${btn.id}`
+            console.log(operator)
         })
     }
 )
