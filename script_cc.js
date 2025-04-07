@@ -1,16 +1,16 @@
 let positionSelector = 1
 
 document.getElementById("top").addEventListener("click", () => {
-    document.getElementById("baseLine").style.border = "1px solid red"
-    document.getElementById("otherLine").style.border = "0px"
-    positionSelector = 1
-
+    selectTop()
 })
-
+document.getElementById("baseLine").addEventListener("click", () => {
+    selectTop()
+})
 document.getElementById("bot").addEventListener("click", () => {
-    document.getElementById("otherLine").style.border = "1px solid red"
-    document.getElementById("baseLine").style.border = "0px"
-    positionSelector = 2
+    selectBot()
+})
+document.getElementById("otherLine").addEventListener("click", () => {
+    selectBot()
 })
 
 
@@ -42,4 +42,15 @@ function writeDigit (nb) {
 
 function writeOperator (op) {
     document.getElementById("operatorLine").innerHTML = `${op}`
+}
+
+function selectTop () {
+    document.getElementById("baseLine").style.border = "1px solid red"
+    document.getElementById("otherLine").style.border = "0px"
+    positionSelector = 1
+}
+function selectBot () {
+    document.getElementById("otherLine").style.border = "1px solid red"
+    document.getElementById("baseLine").style.border = "0px"
+    positionSelector = 2
 }
