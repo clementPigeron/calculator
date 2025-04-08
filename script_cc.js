@@ -152,6 +152,11 @@ function changeStyle(sel) {
         document.querySelector("html").style["background-color"] = "black"
         document.querySelector("header").style["color"] = "white"
         document.querySelector("#paletteSelector").style["color"] = "white"
+    } else if (sel=="dark") {
+        console.log("dark")
+        document.querySelector("html").style["background-color"] = "DimGray"
+        document.querySelector("header").style["color"] = "white"
+        document.querySelector("#paletteSelector").style["color"] = "white"
     }
 
     // style.appendChild(document.createTextNode(cssString));
