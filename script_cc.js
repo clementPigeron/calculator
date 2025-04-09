@@ -1,10 +1,12 @@
+function monCode (x) {
+
 let positionSelector = 1
 let beginTop = 0
 let beginBot = 0
 
 const paletteColors = document.querySelectorAll('input[name="paletteColor"]')
 
-const changingElements = document.querySelectorAll(".change")
+const changingElements = document.querySelectorAll(x)
 
 for(const radioColor of paletteColors) {
     radioColor.addEventListener("change", function() {
@@ -30,8 +32,6 @@ document.getElementById("otherLine").addEventListener("click", () => {
 document.getElementById("clear").addEventListener("click", () => {
     clearLines()
 })
-
-
 
 let digit = document.querySelectorAll(".digit")
 digit.forEach(
@@ -120,14 +120,25 @@ function changeStyle (sel) {
         changingElements.forEach((el) => {
             el.classList.add("default")
             el.classList.remove("black")
+            el.classList.remove("dark")
             
         })
-        document.querySelector("body").style["background-color"] = "white"
     } else if (sel=="black") {
         changingElements.forEach((el) => {
             el.classList.remove("default")
+            el.classList.remove("dark")
             el.classList.add("black")
         })
-        document.querySelector("body").style["background-color"] = "black"
+    } else if (sel=="dark") {
+        changingElements.forEach((el) => {
+            el.classList.remove("default")
+            el.classList.remove("black")
+            el.classList.add("dark")
+        })
     }
+
 }
+
+}
+
+monCode(".change")

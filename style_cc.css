@@ -20,6 +20,10 @@ h1 {
     width: auto;
 }
 
+#buttonBox div {
+    margin:8px 0 8px 0;
+}
+
 #resultBox {
     border: 2px solid black;
     width: 400px;
@@ -49,15 +53,19 @@ button {
 
 /*DEFAULT*/
 
+body.default {
+    background-color: white;
+}
+
 h1.default {
     color: black;
 }
 
- #calculatorBox.default {
+#calculatorBox.default {
     background-color: lightgray;
 }
 
- #baseLine.default {
+#baseLine.default {
     border: 1px solid red;
 }
 
@@ -74,16 +82,18 @@ button.default {
     border-bottom: 4px solid #0e3311;
     background-color: #62b568;
 }
-button:active.default  {
-    border-bottom-width: 1px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-left-width: 0px;
-}
 
 /*BLACK*/
 
+body.black {
+    background-color: black;
+}
+
 h1.black {
+    color: white;
+}
+
+label.black {
     color: white;
 }
 
@@ -108,7 +118,44 @@ button.black  {
     border-bottom: 4px solid #0e3311;
     background-color: #62b568;
 }
-button:active.black  {
+
+/*DARK*/
+
+body.dark {
+    background-color: dimgray;
+}
+
+h1.dark {
+    color: white;
+}
+
+label.dark {
+    color: white;
+}
+
+#calculatorBox.dark  {
+    background-color: lightgray;
+}
+
+#baseLine.dark  {
+    border: 1px solid red;
+}
+
+.monitor.dark  {
+    color: white;
+    background-color: black;
+}
+
+button.dark  {
+    color: #ffffff;
+    border-top: 2px solid #62b568;
+    border-right: 3px solid #0e3311;
+    border-left: 2px solid #62b568;
+    border-bottom: 4px solid #0e3311;
+    background-color: #62b568;
+}
+
+button:active {
     border-bottom-width: 1px;
     border-right-width: 0px;
     border-top-width: 0px;
