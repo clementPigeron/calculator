@@ -1,4 +1,4 @@
-header {
+h1 {
     margin: 20px;
     font-weight: bolder;
 }
@@ -45,31 +45,28 @@ button {
     margin: 5px 5px 5px 5px;
 }
 
-button:active {
-    border-bottom-width: 1px;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-left-width: 0px;
+/* PALETTE COMPONNENTS */
+
+/*DEFAULT*/
+
+h1.default {
+    color: black;
 }
 
-/* PALETTE COMPONNENTS */
-/*
-
-#calculatorBox {
+ #calculatorBox.default {
     background-color: lightgray;
 }
 
-#baseLine {
+ #baseLine.default {
     border: 1px solid red;
 }
 
-#monitor,
-#resultBox {
+.monitor.default {
     color: white;
     background-color: black;
 }
 
-button {
+button.default {
     color: #ffffff;
     border-top: 2px solid #62b568;
     border-right: 3px solid #0e3311;
@@ -77,5 +74,43 @@ button {
     border-bottom: 4px solid #0e3311;
     background-color: #62b568;
 }
+button:active.default  {
+    border-bottom-width: 1px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+}
 
-*/
+/*BLACK*/
+
+h1.black {
+    color: white;
+}
+
+#calculatorBox.black  {
+    background-color: lightgray;
+}
+
+#baseLine.black  {
+    border: 1px solid red;
+}
+
+.monitor.black  {
+    color: white;
+    background-color: black;
+}
+
+button.black  {
+    color: #ffffff;
+    border-top: 2px solid #62b568;
+    border-right: 3px solid #0e3311;
+    border-left: 2px solid #62b568;
+    border-bottom: 4px solid #0e3311;
+    background-color: #62b568;
+}
+button:active.black  {
+    border-bottom-width: 1px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+}
