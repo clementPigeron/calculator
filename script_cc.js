@@ -49,7 +49,6 @@ operatorBloc.forEach(
         btn.addEventListener("click", () => {
             writeOperator(btn.textContent)
             operator = `${btn.id}`
-            console.log(operator)
         })
     }
 )
@@ -64,7 +63,6 @@ document.getElementById("enter").addEventListener("click", () => {
         case "multiply": result = top * bot; break;
     }
     document.getElementById("result").innerHTML = result
-    console.log(operator)
 })
 
 function writeDigit(nb) {
