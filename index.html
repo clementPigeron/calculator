@@ -3,6 +3,7 @@
 
 <head>
     <title>CALCULATOR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style_cc.css">
     <script src="script_cc.js" defer></script>
     <!-- <style id="paletteStyle">+</style> -->
@@ -21,40 +22,42 @@
             <input type="radio" name="paletteColor" value="dark">
             <label for="dark" class="change">dark</label>
         </form>
-        <div class="change" id="calculatorBox">
-            <div id="topMonitor" class="change monitor">
-                <p id="baseLine" class="change">&nbsp;</p>
-                <p id="operatorLine">+</p>
-                <p id="otherLine">&nbsp;</p>
-            </div>
-            <div id="resultBox" class="monitor change">= <span id="result"></span></div>
-            <div id="buttonBox">
-                <div>
-                    <button class="change operator" id="add">+</button>
-                    <button class="change operator" id="substract">-</button>
-                    <button class="change operator" id="multiply">x</button>
-                    <button class="change" id="top">top</button>
-                    <button class="change" id="clear">clear</button>
+        <div class="container">
+            <div class="change" id="calculatorBox">
+                <div id="topMonitor" class="change monitor">
+                    <p id="baseLine" class="change">&nbsp;</p>
+                    <p id="operatorLine">+</p>
+                    <p id="otherLine">&nbsp;</p>
                 </div>
-                <div>
-                    <button class="change digit" id="1">1</button>
-                    <button class="change digit" id="2">2</button>
-                    <button class="change digit" id="3">3</button>
-                    <button class="change" id="bot">bot</button>
-                </div>
-                <div>
-                    <button class="change digit" id="4">4</button>
-                    <button class="change digit" id="5">5</button>
-                    <button class="change digit" id="6">6</button>
-                    <button class="change" id="enter">=</button>
-                </div>
-                <div>
-                    <button class="change digit" id="7">7</button>
-                    <button class="change digit" id="8">8</button>
-                    <button class="change digit" id="9">9</button>
-                </div>
-                <div>
-                    <button class="change digit" id="0">0</button>
+                <div id="resultBox" class="monitor change">= <span id="result"></span></div>
+                <div id="buttonBox">
+                    <div>
+                        <button class="change operator" id="add">+</button>
+                        <button class="change operator" id="substract">-</button>
+                        <button class="change operator" id="multiply">x</button>
+                        <button class="change" id="top">top</button>
+                        <button class="change" id="clear">clear</button>
+                    </div>
+                    <div>
+                        <button class="change digit" id="1">1</button>
+                        <button class="change digit" id="2">2</button>
+                        <button class="change digit" id="3">3</button>
+                        <button class="change" id="bot">bot</button>
+                    </div>
+                    <div>
+                        <button class="change digit" id="4">4</button>
+                        <button class="change digit" id="5">5</button>
+                        <button class="change digit" id="6">6</button>
+                        <button class="change" id="enter">=</button>
+                    </div>
+                    <div>
+                        <button class="change digit" id="7">7</button>
+                        <button class="change digit" id="8">8</button>
+                        <button class="change digit" id="9">9</button>
+                    </div>
+                    <div>
+                        <button class="change digit" id="0">0</button>
+                    </div>
                 </div>
             </div>
         </div>

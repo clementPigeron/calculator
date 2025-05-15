@@ -1,9 +1,15 @@
 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 20px;
     font-weight: bolder;
 }
 
+#paletteSelector {
+    margin-bottom: 20px;
+}
+
 #calculatorBox {
+    border-radius: 20px;
     padding: 15px;
     width: 405px;
 }
@@ -160,4 +166,27 @@ button:active {
     border-right-width: 0px;
     border-top-width: 0px;
     border-left-width: 0px;
+}
+
+@media (max-width:700px) {
+    h1 {
+        text-align: center;
+    }
+    body {
+        margin: 5px;
+    }
+    .container {
+        display: flex;
+    }
+    #calculatorBox {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+    }
+    #topMonitor, #resultBox {
+        width: 100%;
+    }
+    #buttonBox div {
+        display: flex;
+    }
 }
